@@ -8,7 +8,10 @@
 
   <name>Archetype - ecommerce-springboot</name>
   <url>http://maven.apache.org</url>
+
   <modules>
+    <module>Library</module>
+    <module>Admin</module>
   </modules>
 
   <properties>

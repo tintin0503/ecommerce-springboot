@@ -1,4 +1,4 @@
-package com.dev.ecommerce.payload;
+package com.dev.ecommerce.payload.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

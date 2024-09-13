@@ -1,6 +1,6 @@
 package com.dev.ecommerce.exception;
 
-import com.dev.ecommerce.payload.ApiResponse;
+import com.dev.ecommerce.payload.response.ApiResponse;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;

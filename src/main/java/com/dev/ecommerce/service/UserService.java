@@ -1,7 +1,7 @@
 package com.dev.ecommerce.service;
 
 import com.dev.ecommerce.payload.UserDto;
-import com.dev.ecommerce.payload.UserResponse;
+import com.dev.ecommerce.payload.response.UserResponse;
 
 public interface UserService {
 

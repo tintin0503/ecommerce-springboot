@@ -1,4 +1,4 @@
-package com.dev.ecommerce.controllers;
+package com.dev.ecommerce.controllers.internal;
 
 import com.dev.ecommerce.payload.LoginCredentials;
 import com.dev.ecommerce.payload.UserDto;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(Constants.API)
+@RequestMapping(Constants.API + Constants.INTERNAL_PATH)
 @SecurityRequirement(name = Constants.SECURITY_NAME)
 public class AuthController {
 

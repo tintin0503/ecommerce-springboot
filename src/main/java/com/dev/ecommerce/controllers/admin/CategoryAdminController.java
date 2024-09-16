@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(Constants.API + Constants.ADMIN_PATH)
 @SecurityRequirement(name = Constants.SECURITY_NAME)
-public class CategoryController {
+public class CategoryAdminController {
 
     @Autowired
     private CategoryService categoryService;

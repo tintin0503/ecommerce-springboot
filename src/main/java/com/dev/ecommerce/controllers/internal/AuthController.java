@@ -6,6 +6,7 @@ import com.dev.ecommerce.security.JWTUtil;
 import com.dev.ecommerce.service.UserService;
 import com.dev.ecommerce.util.Constants;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.Collections;
 import java.util.Map;
@@ -20,8 +21,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Tag(name = "Auth", description = "Auth APIs")
 @RestController
-@RequestMapping(Constants.API + Constants.INTERNAL_PATH)
+@RequestMapping(Constants.API)
 @SecurityRequirement(name = Constants.SECURITY_NAME)
 public class AuthController {
 

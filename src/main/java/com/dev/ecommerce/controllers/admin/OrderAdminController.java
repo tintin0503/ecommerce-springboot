@@ -5,6 +5,7 @@ import com.dev.ecommerce.payload.response.OrderResponse;
 import com.dev.ecommerce.service.OrderService;
 import com.dev.ecommerce.util.Constants;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@Tag(name = "Admin Order", description = "Order APIs for Admin")
 @RestController
 @RequestMapping(Constants.API + Constants.ADMIN_PATH)
 @SecurityRequirement(name = "E-Commerce Application")

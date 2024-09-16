@@ -4,6 +4,7 @@ import com.dev.ecommerce.payload.CartDto;
 import com.dev.ecommerce.service.CartService;
 import com.dev.ecommerce.util.Constants;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Tag(name = "User Cart", description = "Cart APIs for User")
 @RestController
 @RequestMapping(Constants.API + Constants.INTERNAL_PATH)
 @SecurityRequirement(name = "E-Commerce Application")

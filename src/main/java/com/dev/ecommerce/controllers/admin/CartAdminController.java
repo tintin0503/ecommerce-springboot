@@ -4,6 +4,7 @@ import com.dev.ecommerce.payload.CartDto;
 import com.dev.ecommerce.service.CartService;
 import com.dev.ecommerce.util.Constants;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Tag(name = "Admin Cart", description = "Cart APIs for Admin")
 @RestController
 @RequestMapping(Constants.API + Constants.ADMIN_PATH)
 @SecurityRequirement(name = "E-Commerce Application")
